@@ -1,6 +1,4 @@
 window.onload = function() {
-    var list = document.querySelector('ul');
-
     var todolist = [];
 
     function addItems() {
