@@ -1,0 +1,48 @@
+.wrapper_todo {
+    display: inline-block;
+    margin: 20px auto;
+    border: 2px solid #eeeeee;
+    padding: 10px 20px;
+}
+
+.todo_list {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.todo_list li {
+    cursor: pointer;
+    position: relative;
+    color: #000000;
+    background-color: #eeeeee;
+    transition: 0.2s;
+}
+
+.todo_list li:nth-child(3n){
+    background-color: #b0b8c5;
+    color: #d40747;
+}
+
+.todo_list li:hover {
+    background-color: #a4c9d4;
+}
+
+.todo_list li.checked {
+    background-color: #888888;
+    color: #ffffff;
+    text-decoration: line-through;
+}
+
+.todo_list li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #1d1d1d;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 5px;
+    left: -15px;
+    transform: rotate(45deg);
+    height: 5px;
+    width: 7px;
+}
